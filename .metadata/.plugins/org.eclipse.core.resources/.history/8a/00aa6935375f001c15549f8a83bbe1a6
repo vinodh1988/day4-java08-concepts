@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class ScheduledTaskRunner {
 	
 	public static void main(String n[]) {
-		ScheduledExecutorService service=Executors.newScheduledThreadPool(2);
+		ScheduledExecutorService service=Executors.newScheduledThreadPool(1);
 		
 		ScheduledFuture<String> future =service.schedule(()->{
 			System.out.println("Working");
@@ -18,16 +18,9 @@ public class ScheduledTaskRunner {
 		
 		System.out.println("Job Scheduled");
 		
-		service.scheduleWithFixedDelay(()->{
-			System.out.println("invoked and running...."+
-		Thread.currentThread().getName());
-			try {
-				Thread.sleep(4000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}, 2, 2, TimeUnit.SECONDS);
+		service.scheduleAtFixedRate(()->{
+			System.out.println("invoked and running....");
+		}, 2, 2, null);
 		
 		try {
 			String result = future.get();

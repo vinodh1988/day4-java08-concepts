@@ -18,11 +18,11 @@ public class ScheduledTaskRunner {
 		
 		System.out.println("Job Scheduled");
 		
-		service.scheduleWithFixedDelay(()->{
+		service.scheduleAtFixedRate(()->{
 			System.out.println("invoked and running...."+
 		Thread.currentThread().getName());
 			try {
-				Thread.sleep(4000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
