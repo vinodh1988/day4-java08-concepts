@@ -1,0 +1,19 @@
+package com.async;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class AsyncTaskRunner {
+	public static final ExecutorService es= Executors.newCachedThreadPool();
+	
+	public Future<String> runStringReturnTask(Callable<String> callable){
+		return es.submit(callable);
+	}
+	
+	public Future<String> runEmpReturnTask(Callable<Emp> callable){
+		return es.submit(callable);
+	}
+
+}

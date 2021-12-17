@@ -1,0 +1,14 @@
+package com.async;
+
+public class Tasks {
+	public String getTaskResult(){
+		try {
+			Thread.sleep(3000);
+			return "Task Wrapped";
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+			return "Task Failed";
+		}
+	}
+}

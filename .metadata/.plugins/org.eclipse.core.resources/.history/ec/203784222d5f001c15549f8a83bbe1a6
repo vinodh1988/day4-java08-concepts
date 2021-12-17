@@ -1,0 +1,12 @@
+package com.async;
+
+import java.util.concurrent.Future;
+
+public class MainTask {
+   public static void main(String n[]) {
+	   System.out.println("Main Task Started");
+	   Future<String> future1=AsyncTaskRunner.runStringReturnTask(Tasks::getTaskResult);
+	   Future<Emp[]> future2=AsyncTaskRunner.runEmpReturnTask(Tasks::getEmployeeData);
+	   System.out.println("Started two asynchronous tasks and main is still running");
+   }
+}
