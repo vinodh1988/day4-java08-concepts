@@ -9,11 +9,10 @@ public class MainTask2 {
     	/*if(!x.isCancelled())
     		x.complete("Alternate logic");*/
     	
-    	x=x.thenApply(data->{
-    		System.out.println("First Callable returned->"+data);
-    		return data+ " After further Processing";
+    	x.thenApply(x->{
+    		System.out.println("First Callable returned->"+x);
+    		return x+ " After further Processing";
     	});
-    	
     	try {
 			String result=x.get();
 			System.out.println("Result is "+result);
