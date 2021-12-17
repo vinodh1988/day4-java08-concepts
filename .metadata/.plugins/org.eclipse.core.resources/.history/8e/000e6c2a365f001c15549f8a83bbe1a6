@@ -1,0 +1,19 @@
+package com.async;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
+public class ScheduledTaskRunner {
+	
+	public static void main(String n[]) {
+		ScheduledExecutorService service=Executors.newScheduledThreadPool(1);
+		
+		ScheduledFuture<String> future =service.schedule(()->{
+			System.out.println("Working");
+			return "Success";
+		}, 3, TimeUnit.SECONDS);
+	}
+
+}
