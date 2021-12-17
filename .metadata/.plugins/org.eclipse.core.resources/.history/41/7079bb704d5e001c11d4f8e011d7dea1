@@ -1,0 +1,13 @@
+package com.activity;
+
+import java.util.Optional;
+
+public class OptionalRunner {
+     public static void main(String n[]) {
+    	 Optional<String> k=OptionalType.getData(23);
+    	 if(k.isPresent())
+    		 System.out.println(k);
+    	 else
+    		 System.out.println("Got Nothing");
+     }
+}

@@ -1,0 +1,29 @@
+package com.callers;
+
+import com.fresh.implementors.One;
+import com.library.MyLib;
+import com.old.implementors.First;
+import com.old.implementors.Second;
+
+public class DefaultDemo {
+   public static void main(String[] args) {
+	  
+	   MyLib m=new One();
+	   m.perform();
+	   m.activity();
+	   
+	   m=new First();
+	   m.perform();
+	   m.activity();
+	   
+	   m=new Second();
+	   m.perform();
+	   m.activity();
+	   
+	    m=()->{
+		 System.out.println("Spot Perform");  
+	   };
+	   m.perform();
+	   m.activity();
+   }
+}

@@ -1,0 +1,16 @@
+package com.activity;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class MainRunner {
+    public static void main(String[] args) {
+		ExecutorService e=Executors.newSingleThreadExecutor();
+		e.execute(()->{
+			while(true) {
+				System.out.println("Random"+Math.random()*10000);
+			}
+		});
+	}
+}

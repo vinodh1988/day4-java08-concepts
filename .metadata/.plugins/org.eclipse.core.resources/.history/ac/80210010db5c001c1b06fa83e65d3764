@@ -1,0 +1,11 @@
+package com.callers;
+
+import com.fresh.implementors.One;
+import com.library.*;
+
+public class DefaultDemo {
+   public static void main(String[] args) {
+	  
+	   MyLib m=new One();
+   }
+}

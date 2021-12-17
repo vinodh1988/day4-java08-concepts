@@ -1,0 +1,18 @@
+package com.callers;
+
+import com.methodref.TaskExecutor;
+
+public class TaskExecutorCaller {
+     public static void main(String[] args) {
+	    TaskExecutor.performActivity((name)->{
+	    	System.out.println("Performing a short task "+name);
+	    }, "Documentation");	
+	    
+	    TaskExecutor.performActivity(TaskExecutorCaller::coding, "ABC Project");
+	 }
+     
+     public static void coding(String projectname) {
+    	 System.out.println("Very big activity");
+    	 System.out.println("Coding "+projectname);
+     }
+}

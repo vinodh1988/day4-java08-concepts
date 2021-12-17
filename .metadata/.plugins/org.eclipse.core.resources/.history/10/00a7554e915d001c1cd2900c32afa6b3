@@ -1,0 +1,12 @@
+package com.functions.api;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+public class NumberFilter {
+      public List<Integer> filterNumber(List<Integer> list, Predicate<Integer> predicate)
+      {
+    	  List<Integer> result=new ArrayList<Integer>();
+    	  for(Integer x)
+      }
+}

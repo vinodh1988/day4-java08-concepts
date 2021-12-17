@@ -1,0 +1,15 @@
+package com.set1;
+
+public class RandomStringProvider {
+    final static string[] names= {"Rock","Ram","Roger","Aravind","Ajay","Kiran","Ashley"};
+	public static String stringProvider(int sno) {
+		
+		if(sno%7==0 || sno% 17 % sno%19==0)
+			return null;
+	}
+	
+	public static Optional<String> randomStringProvider(int sno)
+	{
+		
+	}
+}

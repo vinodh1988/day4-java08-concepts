@@ -1,0 +1,29 @@
+package com.callers;
+
+import com.functional.Sample;
+
+public class LamdaDemo {
+   public static void main(String[] args) {
+	   String x[]= {"Raj","Ravi","John"};
+	 Sample s=()->{
+		
+		 System.out.println("Method m1 implementation using lambda");
+		
+		
+	 };
+	 
+	 Store s1= ()->{
+		 System.out.println("Store Play");
+	 };
+	
+	try {
+	 s.m1();
+	}
+	catch(Exception e) {
+	   System.out.println("Received at line 24");	
+	}*/
+	
+	// s.main(x); //Not possible
+	 Sample.main(x);
+   }
+}

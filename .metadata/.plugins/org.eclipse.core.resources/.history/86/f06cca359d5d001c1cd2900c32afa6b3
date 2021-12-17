@@ -1,0 +1,20 @@
+package com.functions.api;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.IOException;
+
+public class DataConsumerMain {
+   public static void main(String[] args) {
+	   File f=new File("D:\\output.txt");
+	   try(BufferedWriter bw=new BufferedWriter(new FileWriter(f,true))){
+		   
+	   }
+	   catch(IOException e) {
+		   e.printStackTrace();
+	   }
+	
+  }
+}

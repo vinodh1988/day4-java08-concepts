@@ -1,0 +1,7 @@
+package com.activity;
+
+public class OptionalType {
+   public Optinal<String> getData(){
+	   
+   }
+}

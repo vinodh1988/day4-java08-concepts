@@ -1,0 +1,6 @@
+package com.functional;
+
+
+public interface Store{
+	public void play(String gamename);
+}

@@ -1,0 +1,9 @@
+package com.streams;
+
+import java.util.Arrays;
+
+public class StreamOperation {
+   public static void main(String[] args) {
+	   List<String> list = Arrays.asList("Roger","Gary","Shahul","Ahmed","Arjun","Russel");
+   }
+}

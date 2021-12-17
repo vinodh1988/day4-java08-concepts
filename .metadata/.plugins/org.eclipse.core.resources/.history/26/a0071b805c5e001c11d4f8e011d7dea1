@@ -1,0 +1,8 @@
+package com.circuit;
+
+public class DemoShortCircuitOperations {
+	public static void main(String n[]) {
+		
+	}
+
+}

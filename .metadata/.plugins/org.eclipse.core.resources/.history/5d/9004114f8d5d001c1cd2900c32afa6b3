@@ -1,0 +1,13 @@
+package com.execution;
+
+import com.now.TaskFacade;
+import com.system.KeyOperations;
+
+public class TaskRunner {
+        public static void main(String[] args) {
+			TaskFacade.TaskExecutor(KeyOperations::coding);
+			TaskFacade.TaskExecutor(KeyOperations::documenting);
+			TaskFacade.TaskExecutor(KeyOperations::bundling);
+			TaskFacade.TaskExecutor(KeyOperations::building);
+		}
+}

@@ -1,0 +1,19 @@
+package com.activity;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class MainClass {
+    public static void main(String n[]) {
+    	ExecutorService e=Executors.newSingleThreadExecutor();
+    	e.submit(()->{
+    		try {
+    			Thread.sleep(1000);
+    			return "Hey!!!";
+    		}
+    		catch(Exception e) {
+    		   e.printStackTrace();	
+    		}
+    	})
+    }
+}

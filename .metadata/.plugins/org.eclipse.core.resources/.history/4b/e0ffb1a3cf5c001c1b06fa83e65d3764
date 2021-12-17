@@ -1,0 +1,5 @@
+package com.functional;
+
+public interface CallBack {
+     public void logic(String n);
+}

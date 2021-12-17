@@ -1,0 +1,17 @@
+package com.streams;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class FileOperation {
+     public static void main(String[] args) {
+	      try {
+			Stream<String> stream=Files.lines(Paths.get("D:\\File.txt"));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	 }
+}

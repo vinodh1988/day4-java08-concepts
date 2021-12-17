@@ -1,0 +1,15 @@
+package com.async;
+
+public class RunnableDemo {
+    public static void main(String n[]) {
+    	Runnable r=new Runnable() {
+    		 public void run() {
+    			 System.out.println("Thread is running and Runnning...!!!");
+    		 }
+    	};
+    	
+    	Thread t=new Thread(r);
+    	System.out.println("Main Program");
+    }
+    
+}

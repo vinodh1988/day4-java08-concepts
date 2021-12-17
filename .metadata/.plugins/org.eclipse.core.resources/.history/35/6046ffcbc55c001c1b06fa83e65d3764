@@ -1,0 +1,15 @@
+package com.fileread;
+
+import java.io.File;
+
+public class FileRead {
+   public static void main(String n[]) {
+	   File f=new File("d:\\Main.java");
+	   
+	   fun();
+   }
+   
+   public static void fun() {
+	   System.out.println("Logic that is no way connected to file that is read");
+   }
+}

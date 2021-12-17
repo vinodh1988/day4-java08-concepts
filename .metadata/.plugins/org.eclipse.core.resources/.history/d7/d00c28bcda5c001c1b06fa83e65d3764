@@ -1,0 +1,8 @@
+package com.library;
+
+public interface MyLib  {
+    public void perform();
+    public void activity() {
+    	System.out.println("Dummy activity");
+    };
+}

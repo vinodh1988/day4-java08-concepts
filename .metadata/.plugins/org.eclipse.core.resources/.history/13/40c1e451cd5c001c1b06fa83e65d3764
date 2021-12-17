@@ -1,0 +1,5 @@
+package com.fileread;
+
+public interface CallBack {
+
+}

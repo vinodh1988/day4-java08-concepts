@@ -1,0 +1,17 @@
+package com.fileread;
+
+
+
+public class ResourceProvider {
+    public static void provideResource(com.fileread.CallBack c) {
+    	System.out.println("We Don't have the resource yet");
+    	System.out.println("Will send it after 3 seconds");
+    	try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	c.
+    }
+}

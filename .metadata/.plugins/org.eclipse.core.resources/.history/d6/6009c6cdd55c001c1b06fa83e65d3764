@@ -1,0 +1,6 @@
+package com.functional;
+
+
+interface Store{
+	public void play();
+}

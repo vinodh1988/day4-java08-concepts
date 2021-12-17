@@ -1,0 +1,8 @@
+package com.callers;
+
+public class DefaultDemo {
+   public static void main(String[] args) {
+	  
+	   MyLib m=new One();
+   }
+}

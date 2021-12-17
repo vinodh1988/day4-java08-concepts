@@ -1,0 +1,10 @@
+package com.functions.api;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class NumberFilterMain {
+      public static void main(String[] args) {
+		  List<Integer> list= Arrays.asList(434,3435,334,434,3435,212,345,564,3466,343,13,34,13);
+	  }
+}

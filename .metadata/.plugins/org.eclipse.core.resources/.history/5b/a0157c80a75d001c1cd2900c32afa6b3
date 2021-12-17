@@ -1,0 +1,10 @@
+package com.streams;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class FileOperation {
+     public static void main(String[] args) {
+	      Files.lines(Path.get("D:\\File.txt"));	
+	 }
+}
