@@ -1,0 +1,10 @@
+package com.async;
+
+import java.util.concurrent.CompletableFuture;
+
+public class MainTask2 {
+    public static void main(String n[]) {
+    	CompletableFuture<String> x
+    	=CompletableFuture.supplyAsync(Tasks::getTaskResult);
+    }
+}
