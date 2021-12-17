@@ -6,8 +6,8 @@ import java.util.concurrent.ExecutionException;
 public class MainTask2 {
     public static void main(String n[]) {
     	CompletableFuture<String> x=CompletableFuture.supplyAsync(Tasks::getTaskResult);
-    	/*if(!x.isCancelled())
-    		x.complete("Alternate logic");*/
+    	if(x.isCancelled())
+    		x.complete("Alternate logic");
     	try {
 			String result=x.get();
 			System.out.println("Result is "+result);
