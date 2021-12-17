@@ -1,0 +1,37 @@
+package com.threadpools;
+
+import java.util.concurrent.Executors;
+
+public class SecondDemo {
+	public static void main(String[] args) {
+		ExecutorService e=Executors.newFixedThreadPool(2);
+		
+	}
+
+	public  static void job() {
+		while(true) {
+			long x=Math.round(Math.random()*50);
+			System.out.println("Running it with the value "+x);
+			if(x==15)
+				break;
+			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void task() {
+	    for(int i=0;i<50;i++) {
+	    	System.out.println("Task Mission 22 is running the sub task "+i);
+	    	try {
+	    		Thread.sleep(50);
+	    	}
+	    	catch (Exception e) {
+				// TODO: handle exception
+			}
+	    }	
+	}
+}
