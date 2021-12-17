@@ -11,11 +11,11 @@ public class SecondDemo {
 		e.execute(SecondDemo::job);
 		e.execute(SecondDemo::task);
 		e.execute(SecondDemo::perform);
-	  try {
+		try {
 		Thread.sleep(4000);
 		}
-		catch(Exception ex) {
-			ex.printStackTrace();
+		catch(Exception e) {
+			e.printStackTrace();
 		}
 		e.execute(SecondDemo::task);
 		e.execute(SecondDemo::perform);

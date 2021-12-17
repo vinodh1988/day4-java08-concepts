@@ -11,14 +11,7 @@ public class SecondDemo {
 		e.execute(SecondDemo::job);
 		e.execute(SecondDemo::task);
 		e.execute(SecondDemo::perform);
-	  try {
-		Thread.sleep(4000);
-		}
-		catch(Exception ex) {
-			ex.printStackTrace();
-		}
-		e.execute(SecondDemo::task);
-		e.execute(SecondDemo::perform);
+		
 	}
 
 	public  static void job() {
